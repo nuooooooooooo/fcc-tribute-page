@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*remove above before testing on fcc codepen*/
+
+html {
+  min-height: 100%;
+}
+/* above code added for sticky footer */
+body {
+  line-height: 1.7em;
+  font-family: Calibri, sans-serif;
+  color: #535353;
+}
+/* min-height added for sticky footer */
+.page {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 80%;
+  margin: 1em auto;
+  margin-top: 8em;
+  padding: 1em 0em;
+  max-width: 47em;
+  /* border: 2px solid #4a4a4a; */
+}
+
+header,
+footer {
+  width: 100%;
+  background-color: rgb(105, 214, 191);
+  color: white;
+  text-shadow: 0px 2px 3px rgb(85, 168, 150);
+  padding: 1em 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+header {
+  position: fixed;
+  box-shadow: 0 3px 15px 1px rgba(100, 100, 100, 0.49);
+  padding: 1.5em;
+}
+
+#title,
+.subtitle {
+  line-height: 1.3em;
+  font-weight: 700;
+}
+
+h1 {
+  font-family: "Baloo 2", sans-serif;
+  font-size: 2em;
+}
+
+h2 {
+  font-family: "Baloo 2", sans-serif;
+  font-size: 2em;
+  color: #977967;
+  text-align: center;
+  /* text-shadow: 0px 2px 3px #7b5844; */
+  margin: 1.5rem 0;
+}
+h2:last-of-type {
+  margin-top: 4rem;
+}
+h3 {
+  text-align: center;
+  margin: 1.5rem;
+  color: #977967;
+  font-size: 1.5em;
+}
+img {
+  display: block;
+}
+
+#img-div {
+  margin: 1.5rem 0;
+  border-radius: 5px;
+  padding: 0.6rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 -3px 15px 1px rgba(100, 100, 100, 0.2);
+}
+
+#image {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+figcaption,
+p {
+  font-size: 1.3rem;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.dates {
+  color: rgb(105, 214, 191);
+  font-weight: 1000;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-article {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  box-shadow: 0 -3px 15px 1px rgba(100, 100, 100, 0.2);
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 0;
+  padding: 1rem;
+}
+.container-article:first-of-type {
+  margin-top: 0;
+}
+
+.img-article {
+  align-self: center;
+  border-radius: 50%;
+  border: 5px solid rgba(85, 168, 150, 0.49);
+  max-width: 16em;
+  margin: 1em;
+  width: 50%;
+}
+
+.testimony {
+  color: #6d6d6d;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 1.3em;
+  max-width: 30em;
+  padding: 1em;
+  text-align: left;
+}
+.testifier {
+  display: inline;
+  font-size: 1.2em;
+  font-weight: 900;
+  margin-left: 1rem;
+}
+
+.more-info {
+  text-align: center;
+  font-size: 1.8em;
+}
+
+footer {
+  margin-top: auto;
+  box-shadow: 0 -3px 15px 1px rgba(100, 100, 100, 0.49);
+  font-weight: 800;
+}
+/* margin-top added for sticky footer */
+
+#tribute-link,
+.link-main {
+  background-image: linear-gradient(
+    transparent 0%,
+    transparent 59%,
+    rgba(105, 214, 191, 0.7) 60%,
+    rgba(105, 214, 191, 0.7) 100%
+  );
+  border-radius: 2px;
+  color: #535353;
+  padding: 3px, 2px, 5px, 2px;
+  text-decoration: none;
+
+  transition: all 200ms ease-in-out;
+}
+
+#tribute-link:hover,
+.link-main:hover {
+  background-color: rgba(105, 214, 191, 0.7);
+}
+.footer-link {
+  color: white;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 650px) {
+  .container {
+    margin-top: 100px;
+  }
+  .container-article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .img-article {
+    min-width: 9em;
+  }
+  .testimony,
+  .testifier {
+    font-size: 1.5em;
+  }
+}
